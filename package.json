@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "nodemon -i ./data -x babel-node index.js",
+        "start": "nodemon index.js --exec babel-node",
         "help": "nodemon -h",
         "utils": "babel-node utils/streams.js run"
     },
@@ -38,6 +38,9 @@
         "request": "^2.83.0",
         "split": "^1.0.1",
         "through2": "^2.0.3",
-        "yargs": "^9.0.1"
+        "yargs": "^9.0.1",
+        "cookie-parser": "^1.4.3",
+        "express": "^4.16.2",
+        "papaparse": "^4.3.6"
     }
 }
