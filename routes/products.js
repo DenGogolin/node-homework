@@ -1,6 +1,6 @@
 import {Router} from "express";
 import EventEmitter from "events";
-import {Importer} from "../service/importer";
+import {Importer} from "../modules";
 export const products = Router();
 const csvPath = './data/MOCK_DATA.csv';
 const emitter = new EventEmitter();
